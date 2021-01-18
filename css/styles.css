@@ -5,22 +5,32 @@ body {
 }
 
 h1 {
-    margin-top: 0;
+    margin: 50px auto 0 auto;
     font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #232931;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #232931;
+    font-weight: normal;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
+    color: #393e46;
+}
+
+a {
+    color: #393e46;
 }
 
 .top-container {
     background-color: #4ecca3;
     position: relative;
-    padding: 20px;
+    padding: 100px;
 }
 
 .top-cloud {
@@ -36,6 +46,29 @@ h3 {
 }
 
 .middle-container {
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.skill-img-left {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.skill-img-right {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.img-attr {
+    font-size: .125rem;
 }
 
 .bottom-container {

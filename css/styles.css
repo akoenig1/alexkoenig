@@ -161,7 +161,7 @@ hr {
     display: inline-block;
     cursor: pointer;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
  }
  
  .btn:hover {
@@ -185,20 +185,23 @@ hr {
 .bottom-container {
     background-color: #eeeeee;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .footer-link {
     color: #393e46;
     font-family: 'Montserrat', sans-serif;
     margin: 0 20px;
+    text-decoration: none;
 }
 
 .footer-link:hover {
     color: #4ACCA3;
     -webkit-transition: .1s;
+    text-decoration: underline;
 }
 
-.bottom-container p {
+.copyrite {
     color: #232931;
+    font-size: .75rem;
 }

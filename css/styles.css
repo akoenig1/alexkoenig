@@ -25,6 +25,8 @@ h3 {
 
 a {
     color: #393e46;
+    text-emphasis: none;
+    text-decoration: none;
 }
 
 hr {
@@ -80,6 +82,11 @@ hr {
     line-height: 2;
 }
 
+.profile h2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 #profile-pic {
     border-radius: 50%;
     border-style: solid;
@@ -129,6 +136,41 @@ hr {
 .img-attr-right a {
     font-size: .125rem;
     color: #232931;
+}
+
+.project-card-deck {
+    margin-top: 100px;
+}
+
+.project-column {
+    margin: 3% auto;
+}
+
+.card {
+    background-color: #232931;
+}
+
+.card-img-container {
+    max-height: 18rem;
+    margin: 3% auto;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.project-link {
+    font-size: 1.25rem;
+    color: #4ACCA3;
+}
+
+.project-link:hover {
+    color: #fff;
+    text-decoration: underline;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
 }
 
 .contact-me {
@@ -186,6 +228,11 @@ hr {
     background-color: #eeeeee;
     padding-top: 40px;
     padding-bottom: 20px;
+    line-height: 2;
+}
+
+.contact-text {
+    margin-top: 100px;
 }
 
 .footer-link {

@@ -183,46 +183,76 @@ hr {
     margin-bottom: 40px;
 }
 
-.btn {
+.btn:link,
+.btn:visited {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15px 40px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+    transition: all .2s;
+ }
+ 
+ .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+ }
+
+ .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    outline: none;
+ }
+
+ .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+.btn-green {
     background: #4ACCA3;
     background-image: -webkit-linear-gradient(top, #4ACCA3, #206A52);
     background-image: -moz-linear-gradient(top, #4ACCA3, #206A52);
     background-image: -ms-linear-gradient(top, #4ACCA3, #206A52);
     background-image: -o-linear-gradient(top, #4ACCA3, #206A52);
     background-image: -webkit-gradient(to bottom, #4ACCA3, #206A52);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
     color: #EEEEEE;
-    font-family: 'Merriweather', serif;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 10px;
     border: solid #232931 1px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    margin-top: 60px;
- }
- 
- .btn:hover {
-    border: solid #4ECCA3 1px;
-    background: #232931;
-    background-image: -webkit-linear-gradient(top, #232931, #393E46);
-    background-image: -moz-linear-gradient(top, #232931, #393E46);
-    background-image: -ms-linear-gradient(top, #232931, #393E46);
-    background-image: -o-linear-gradient(top, #232931, #393E46);
-    background-image: -webkit-gradient(to bottom, #232931, #393E46);
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    text-decoration: none;
- }
+}
+
+.btn-green:hover {
+    color: #eee;
+}
+
+.btn-green::after {
+    background-color: #206A52;
+}
 
 .bottom-container {
     background-color: #eeeeee;

@@ -6,26 +6,36 @@
 
         <!-- Import Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  
+        
+        <!-- Import Favicon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
 
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="icon" href="favicon.ico">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
         <section class="top-container">
-            <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
             <h1>I'm Alex.</h1>
-            <h2>a <span class="pro">pro</span>grammer.</h2>
-            <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-            <img src="images/mountain.png" alt="mountain-img">
+            <h2>a full-stack web developer.</h2>
+            <a href="#about" class="btn top-container__btn btn--dark">
+                <div class="top-container__btn-content">
+                    Learn more about me
+                    <i class="fas fa-arrow-right arrow--dark"></i>
+                </div>
+            </a>
         </section>
 
+        <a name="about"></a>
         <section class="middle-container">
             
+
             <div class="profile">
-                <img id="profile-pic" src="./images/headshot.jpeg" alt="profile-picture">
+                <div class="profile-pic-container">
+                    <img id="profile-pic" src="./images/headshot.jpeg" alt="profile-picture">
+                </div>
                 <h2>Hello.</h2>
                 <p>
                     I'm a Full Stack Web Developer and Software Engineer. I create full stack web applications from the ground up and 
@@ -37,39 +47,76 @@
             
             <div class="skills">
                 <h2>My Skills.</h2>
-                <div class="skill-row">
-                    <img class="skill-img-left" src="./images/data.svg" alt="web-app">
-                    <h3>MERN Stack</h3>
-                    <p>
-                        Though I first learned backend development with Rails and SQLite, I started developing on the MERN stack six months 
-                        ago and have built most of my applications since with MongoDB, Node/Express, and React, some of today's most
-                        widely used technologies and frameworks.
-                    </p>
-                    <div class="img-attr-left">
-                        Icons made by <a 
-                            href="https://www.flaticon.com/authors/freepik" 
-                            title="Freepik">Freepik
-                        </a> from <a 
-                            href="https://www.flaticon.com/" 
-                            title="Flaticon">www.flaticon.com</a>
+                
+                <div class="skill-row row">
+                    <div class="skill-img-container col-md-6">
+                        <img class="skill-img" src="./images/languages.svg" alt="terminal-icon">
+                        <div class="img-attr">
+                            <div class="img-attr-text">
+                                Icons made by <a href="" title="Pixelmeetup">Pixelmeetup</a>
+                                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-img-text col-md-6">
+                        <h3>Languages</h3>
+                        <div class="skill-list-container">
+                            <ul class="skill-list fa-ul">
+                                <li><span class="fa-li"><i class="fab fa-js"></i></span>JavaScript</li>
+                                <li><span class="fa-li"><i class="far fa-gem"></i></span>Ruby</li>
+                                <li><span class="fa-li"><i class="fas fa-plus"></i></span>C / C++</li>
+                                <li><span class="fa-li"><i class="fab fa-python"></i></span>Python</li>
+                                <li><span class="fa-li"><i class="fas fa-code"></i></span>HTML</li>
+                                <li><span class="fa-li"><i class="fab fa-css3"></i></span>CSS</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-row">
-                    <img class="skill-img-right" src="./images/pot.svg" alt="coffee-pot">
-                    <h3>Coffee Brewing</h3>
-                    <p>
-                        I have no shame in the amount of time and money I've spent perfecting my brewing process, from my overall knowledge
-                        of coffee to the quality of my brewing equipment. Now more than ever, its vital to be able to make yourself a great
-                        cup at home, so I'd say this investment has paid off.  
-                    </p>
-                    <div class="img-attr-right">
-                        Icons made by <a 
-                            href="http://www.freepik.com" 
-                            title="Freepik">Freepik
-                        </a> from <a 
-                            href="https://www.flaticon.com/" 
-                            title="Flaticon">www.flaticon.com
-                        </a>
+                
+                <div class="skill-row row flex-column flex-md-row-reverse">
+                    <div class="skill-img-container col-md-6">
+                        <img class="skill-img" src="./images/frameworks.svg" alt="framework-icon">
+                        <div class="img-attr">
+                            <div class="img-attr-text">
+                                Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a>
+                                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-img-text col-md-6">
+                        <h3>Frameworks</h3>
+                        <div class="skill-list-container">
+                            <ul class="skill-list fa-ul">
+                                <li><span class="fa-li"><i class="fab fa-node-js"></i></span>Node / Express</li>
+                                <li><span class="fa-li"><i class="fas fa-subway"></i></span>Rails</li>
+                                <li><span class="fa-li"><i class="fab fa-react"></i></span>React</li>
+                                <li><span class="fa-li"><i class="fas fa-dollar-sign"></i></span>jQuery</li>
+                                <li><span class="fa-li"><i class="fab fa-bootstrap"></i></span>Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-row row">
+                    <div class="skill-img-container col-md-6">
+                        <img class="skill-img" src="./images/technology.svg" alt="database-icon">
+                        <div class="img-attr">
+                            <div class="img-attr-text">
+                                Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>
+                                from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-img-text col-md-6">
+                        <h3>Tech</h3>
+                        <div class="skill-list-container">
+                            <ul class="skill-list fa-ul">
+                                <li><span class="fa-li"><i class="fab fa-github"></i></span>Git / Github</li>
+                                <li><span class="fa-li"><i class="fab fa-envira"></i></span>MongoDB</li>
+                                <li><span class="fa-li"><i class="fas fa-database"></i></span>SQLite / PostgreSQL</li>
+                                <li><span class="fa-li"><i class="fas fa-layer-group"></i></span>MERN Stack</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,39 +129,82 @@
 
                 <div class="row project-card-deck">
 
-                    <div class="project-column col-lg-4 col-md-6">
+                    <div class="project-column col-xl-4 col-lg-6">
                       <div class="card">
                         <div class="card-body">
                             <div class="card-img-container">
-                                <a href="https://cookingsousviv.com">
-                                    <img class="card-img" src="images/cookingsousviv.png" alt="cookingsousviv-landing-page">
-                                </a>
+                                <img class="card-img" src="images/cookingsousviv.png" alt="cookingsousviv-landing-page">
+                                <div class="card-img-overlay">
+                                    <a class="project-link" href="https://cookingsousviv.com" target="_blank">
+                                        <div class="overlay-text">
+                                            <h3 class="project-title">Cooking Sous Viv</h3>
+                                            <p class="project-description">
+                                                Cooking Sous Viv is an interactive food blog highlighting Vivian's favorite recipes and ingredients.
+                                                The website is being developed to increase the web presence of her brand and amplify the growing reach of
+                                                her Instagram account. I am working closely with Vivian to design the right UI for her brand and 
+                                                implement the features she needs.
+                                            </p>
+                                            <h4>Technologies Used:</h4>
+                                            <p class="project-tech">
+                                                Node/Express, React, MongoDB, CSS, Bootstrap
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <a class="project-link" href="https://cookingsousviv.com">cookingsousviv.com</a>
                         </div>
                       </div>
                     </div>
               
-                    <div class="project-column col-lg-4 col-md-6">
+                    <div class="project-column col-xl-4 col-lg-6">
                       <div class="card">
                         <div class="card-body">
                             <div class="card-img-container">
-                                
+                                <img class="card-img" src="images/cookingsousviv.png" alt="cookingsousviv-landing-page">
+                                <div class="card-img-overlay">
+                                    <a class="project-link" href="https://petsnpetals.com" target="_blank">
+                                        <div class="overlay-text">
+                                            <h3 class="project-title">Pets n' Petals</h3>
+                                            <p class="project-description">
+                                                Pets n' Petals is a pet-sitting business in Kings Park, NY that seeks to eliminate worry for pet 
+                                                owners who are going out of town or have busy work schedules. petsnpetals.com is being created with 
+                                                frequent input from the owner to improve the reach and recoginition of this local small business.
+                                            </p>
+                                            <h4>Technologies Used:</h4>
+                                            <p class="project-tech">
+                                                JavaScript, jQuery, HTML, CSS, Bootstrap
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <a class="project-link" href="">petsnpetals.com</a>
                         </div>
                       </div>
                     </div>
               
-                    <div class="project-column col-lg-4 col-md-6">
+                    <div class="project-column col-xl-4 col-lg-6">
                       <div class="card">
                         <div class="card-body">
                             <div class="card-img-container">
-                                <a href="https://www.theodinproject.com">
-                                    <img class="card-img" src="images/theodinproject.png" alt="theodinproject-landing-page">
-                                </a>
+                                <img class="card-img" src="images/theodinproject.png" alt="theodinproject-landing-page">
+                                <div class="card-img-overlay">
+                                    <a class="project-link" href="https://www.theodinproject.com" target="_blank">
+                                        <div class="overlay-text">
+                                            <h3 class="project-title">The Odin Project</h3>
+                                            <p class="project-description">
+                                                The Odin Project is an online, full-stack web development curriculum built on the concept
+                                                of project-based learning. Since participating in the coursework myself to supplement my
+                                                full-stack skills, I have continued my involvement in the community by making contributions 
+                                                to improve the open source curriculum and main website.
+                                            </p>
+                                            <h4>Technologies Used:</h4>
+                                            <p class="project-tech">
+                                                PostgreSQL, Rails, React, JavaScript, HTML, CSS
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            <a class="project-link" href="https://www.theodinproject.com">The Odin Project</a>
                         </div>
                       </div>
                     </div>
@@ -133,7 +223,7 @@
                         Send me an email if you want to talk about your latest web development project. Or if you just want to appreciate a 
                         great cup of coffee together. Or a scotch, if thats more your style.
                     </p>
-                    <a class="btn btn-green btn-animated" href="mailto:alex.koenig4@gmail.com">CONTACT ME</a>
+                    <a class="btn contact-me__btn btn-green btn-animated" href="mailto:alex.koenig4@gmail.com">CONTACT ME</a>
                 </div>
 
             </div>
@@ -142,8 +232,8 @@
           
           
         <section class="bottom-container">
-            <a class="footer-link" href="https://www.linkedin.com/in/alexander-koenig-0a198559/">LinkedIn</a>
-            <a class="footer-link" href="https://github.com/akoenig1">Github</a>
+            <a class="footer-link" href="https://www.linkedin.com/in/alexander-koenig-0a198559/" target="_blank">LinkedIn</a>
+            <a class="footer-link" href="https://github.com/akoenig1" target="_blank">Github</a>
             <p class="copyrite">© 2021 Alex Koenig</p>
         </section>
          

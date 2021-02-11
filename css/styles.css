@@ -38,7 +38,7 @@ a {
 }
 
 hr {
-    width: 6%;
+    width: 100px;
     border-color: #eeeeee;
     border-style: dotted none none none;
     border-width: .75rem;
@@ -65,7 +65,6 @@ hr {
     position: absolute;
     bottom: 2rem;
     transform: translateX(-50%);
-    white-space: nowrap;
 }
 
 .top-container__btn:hover .arrow--dark {
@@ -102,14 +101,15 @@ hr {
 /* About Me */
 
 .profile {
+    min-height: 80vh;
     width: 50%;
     margin: 0 auto;
     line-height: 2;
 }
 
 .profile h2 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .profile-pic-container {
@@ -143,7 +143,7 @@ hr {
 
 .skill-img {
     width: 100%;
-    filter: invert(76%) sepia(14%) saturate(1277%) hue-rotate(108deg) brightness(80%) contrast(62%);
+    filter: invert(69%) sepia(19%) saturate(1051%) hue-rotate(109deg) brightness(70%) contrast(89%);
 }
 
 .skill-img-text {
@@ -164,7 +164,7 @@ hr {
     text-align: left;
     display: inline-block;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 .skill-list li {
@@ -182,7 +182,7 @@ hr {
     display: none;
     font-size: .5rem;
     color: #232931;
-    background-color: #4ACCA3;
+    background-color: #4ECCA3;
     text-align: center;
     padding: 5px;
     position: absolute;
@@ -202,32 +202,40 @@ hr {
 
 /* Projects */
 
+.projects {
+    min-height: 80vh;
+}
+
 .project-card-deck {
     margin-top: 100px;
 }
 
 .project-column {
     margin: 3% auto;
+    width: 425px;
+    height: 375px;
 }
 
 .card {
     border: none;
+    object-fit: cover;
 }
 
 .card-body {
     padding: 0;
+    object-fit: cover;
 }
 
 .card-img-container {
-    height: 28rem;
     position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .card-img {
     height: 100%;
     width: 100%;
-    object-fit: fill;
-
 }
 
 .card-img-container:hover .card-img-overlay {
@@ -272,11 +280,13 @@ hr {
 
 .project-tech {
     font-size: 1rem;
+    margin-bottom: 0;
 }
 
 /* Contact */
 
 .contact-me {
+    min-height: 60vh;
     width: 50%;
     margin: 0 auto;
     line-height: 2;
@@ -358,7 +368,7 @@ hr {
 }
 
 .footer-link:hover {
-    color: #4ACCA3;
+    color: #4ECCA3;
     transition: .1s;
     -webkit-transition: .1s;
     text-decoration: underline;
@@ -373,18 +383,22 @@ hr {
 
 /* Buttons */
 
+.btn {
+    white-space: nowrap;
+}
+
 .btn-animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
 
 .btn-green {
-    background: #4ACCA3;
-    background-image: -webkit-linear-gradient(top, #4ACCA3, #206A52);
-    background-image: -moz-linear-gradient(top, #4ACCA3, #206A52);
-    background-image: -ms-linear-gradient(top, #4ACCA3, #206A52);
-    background-image: -o-linear-gradient(top, #4ACCA3, #206A52);
-    background-image: -webkit-gradient(to bottom, #4ACCA3, #206A52);
+    background: #4ECCA3;
+    background-image: -webkit-linear-gradient(top, #4ECCA3, #206A52);
+    background-image: -moz-linear-gradient(top, #4ECCA3, #206A52);
+    background-image: -ms-linear-gradient(top, #4ECCA3, #206A52);
+    background-image: -o-linear-gradient(top, #4ECCA3, #206A52);
+    background-image: -webkit-gradient(to bottom, #4ECCA3, #206A52);
     color: #EEEEEE;
     border: solid #232931 1px;
 }
@@ -410,6 +424,39 @@ hr {
 
 /* Media Queries */
 
+@media (min-width: 1250px) {
+    .profile {
+        width: 40%;
+    }
+    
+    .skill-row {
+        width: 40%;
+    }
+
+    .project-column {
+        width: 500px;
+        height: 440px;
+    }
+
+    .contact-me {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .profile {
+        width: 30%;
+    }
+    
+    .skill-row {
+        width: 30%;
+    }
+
+    .contact-me {
+        width: 30%;
+    }
+}
+
 @media (max-width: 1000px) {
     .top-container {
         padding-left: 75px;
@@ -420,8 +467,16 @@ hr {
         padding-left: 75px;
         padding-right: 75px;
     }
+
+    .profile {
+        width: 65%;
+    }
     
     .skill-row {
+        width: 70%;
+    }
+
+    .contact-me {
         width: 65%;
     }
 }
@@ -436,8 +491,20 @@ hr {
         padding-left: 50px;
         padding-right: 50px;
     }
+
+    .profile {
+        width: 80%;
+    }
+
+    .profile-pic-container {
+        max-width: 300px;
+    }
     
     .skill-row {
+        width: 80%;
+    }
+
+    .contact-me {
         width: 80%;
     }
 }
@@ -452,8 +519,61 @@ hr {
         padding-left: 25px;
         padding-right: 25px;
     }
+
+    .profile {
+        width: 95%;
+    }
+
+    .profile-pic-container {
+        max-width: 250px;
+    }
     
     .skill-row {
         width: 95%;
+    }
+
+    .project-column {
+        width: 375px;
+        height: 325px;
+    }
+
+    .project-title {
+        font-size: 5vw;
+        margin-bottom: 1rem;
+    }
+
+    .project-description {
+        font-size: 2.5vw;
+    }
+
+    .overlay-text h4 {
+        font-size: 3vw;
+    }
+
+    .project-tech {
+        font-size: 2.5vw;
+    }
+
+    .contact-me {
+        width: 95%;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-title {
+        font-size: 6vw;
+        margin-bottom: 1rem;
+    }
+
+    .project-description {
+        font-size: 3vw;
+    }
+
+    .overlay-text h4 {
+        font-size: 4vw;
+    }
+
+    .project-tech {
+        font-size: 3vw;
     }
 }

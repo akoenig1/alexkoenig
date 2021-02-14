@@ -266,11 +266,21 @@ hr {
 .project-link {
     font-size: 1.25rem;
     padding: 0;
+    color: #232931;
+    text-decoration: underline;
 }
 
-.overlay-text h3 {
-    color: #fff;
+.project-link:hover {
+    color: #4ECCA3;
+}
+
+.project-link h3 {
+    color: #232931;
     margin-bottom: 1.5rem;
+}
+
+.project-link h3:hover {
+    color: #4ECCA3;
 }
 
 .project-description {

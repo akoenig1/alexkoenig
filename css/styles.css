@@ -323,6 +323,7 @@ hr {
 
  .contact-me__btn:link,
  .contact-me__btn:visited {
+    font-family: 'Montserrat', sans-serif;
     margin-top: 60px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
